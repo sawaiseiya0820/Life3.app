@@ -21,7 +21,7 @@ class world: UIViewController {
     @IBOutlet weak var roll34: UITextField!
     @IBOutlet weak var roll35: UITextField!
     @IBOutlet weak var roll36: UITextField!
-    @IBOutlet weak var roll37: UITextField!
+//    @IBOutlet weak var roll37: UITextField!
     
         override func viewDidLoad() {
             

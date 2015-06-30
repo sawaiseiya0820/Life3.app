@@ -155,4 +155,6 @@ class MasterTableViewController: UITableViewController {
     }
     
 
+    @IBAction func yaku5(sender: AnyObject) {
+    }
 }

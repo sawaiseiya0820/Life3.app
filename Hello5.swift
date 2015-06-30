@@ -14,7 +14,13 @@ class Hello5: UIViewController {
 @IBOutlet weak var text23: UITextField!
 @IBOutlet weak var text24: UITextField!
 @IBOutlet weak var text25: UITextField!
-    
+  
+    @IBOutlet weak var roll21: UITextField!
+    @IBOutlet weak var roll22: UITextField!
+    @IBOutlet weak var roll23: UITextField!
+    @IBOutlet weak var roll24: UITextField!
+    @IBOutlet weak var roll25: UITextField!
+
     override func viewDidLoad() {
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -29,8 +35,19 @@ class Hello5: UIViewController {
         var four1 = text24.text
         var five1 = text25.text
         
+        var add21 = roll21.text
+        var add22 = roll22.text
+        var add23 = roll23.text
+        var add24 = roll24.text
+        var add25 = roll25.text
+
         
-        
+        Array2.append(add21)
+        Array2.append(add22)
+        Array2.append(add23)
+        Array2.append(add24)
+        Array2.append(add25)
+
         
         
         
@@ -45,7 +62,7 @@ class Hello5: UIViewController {
         
         
         Array.shuffle(5)
-        
+        Array2.shuffle(5)
         
         
     }

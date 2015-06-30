@@ -20,21 +20,21 @@ class Hello8: UIViewController {
     @IBOutlet weak var label25: UILabel!
     
     
+    @IBOutlet weak var app21: UILabel!
+    @IBOutlet weak var app22: UILabel!
+    @IBOutlet weak var app23: UILabel!
+    @IBOutlet weak var app24: UILabel!
+    @IBOutlet weak var app25: UILabel!
+  
     
     override func viewDidLoad() {
         
         //self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
-    @IBAction func setButton1(sender: AnyObject) {
+    @IBAction func setButton2(sender: AnyObject) {
         
-        var random21: Int
-        var random22: Int
-        var random23: Int
-        var random24: Int
-        var random25: Int
-        
-        
+               
         
         Array.shuffle(Array.count)
         label21.text = Array[0]
@@ -49,4 +49,25 @@ class Hello8: UIViewController {
         
         
     }
+    @IBAction func rollbutton2(sender: AnyObject) {
+        
+        
+        Array2.shuffle(Array.count)
+        app21.text = Array2[0]
+        app22.text = Array2[1]
+        app23.text = Array2[2]
+        app24.text = Array2[3]
+        app25.text = Array2[4]
+        
+    }
+    
+    
+    @IBAction func nextButton2(sender: AnyObject) {
+    }
+    
+
+
+
 }
+
+

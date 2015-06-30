@@ -19,7 +19,10 @@ class Hello2: UIViewController {
     @IBOutlet weak var text4: UITextField!
 
     
-    
+    @IBOutlet weak var roll1: UITextField!
+    @IBOutlet weak var roll2: UITextField!
+    @IBOutlet weak var roll3: UITextField!
+    @IBOutlet weak var roll4: UITextField!
     
     
    
@@ -46,13 +49,36 @@ class Hello2: UIViewController {
         var third = text3.text
         var four = text4.text
         
+        
+        var add1 = roll1.text
+        var add2 = roll2.text
+        var add3 = roll3.text
+        var add4 = roll4.text
+        
+        
+        Array2.append(add1)
+        Array2.append(add2)
+        Array2.append(add3)
+        Array2.append(add4)
+        
+        
+        
+        
+        
+        
         Array.append(first)
         Array.append(second)
         Array.append(third)
         Array.append(four)
         
+        
+        
+        
+        
+        
         Array.shuffle(4)
-     
+        Array2.shuffle(4)
+
         
         self.performSegueWithIdentifier("hey", sender: self)
     

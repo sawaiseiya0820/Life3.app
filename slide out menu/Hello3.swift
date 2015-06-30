@@ -17,6 +17,11 @@ class Hello3:UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
     
+    @IBOutlet weak var app1: UILabel!
+    @IBOutlet weak var app2: UILabel!
+    @IBOutlet weak var app3: UILabel!
+    @IBOutlet weak var app4: UILabel!
+    
     //var randInt = Int(arc4random_uniform(UInt32(Array.count)))
     
     
@@ -71,6 +76,21 @@ class Hello3:UIViewController {
     
     
     }
+    @IBAction func rollbutton(sender: AnyObject) {
+        
+        
+        Array2.shuffle(Array.count)
+        app1.text = Array2[0]
+        app2.text = Array2[1]
+        app3.text = Array2[2]
+        app4.text = Array2[3]
+        
+    }
+    
+    
+    @IBAction func nextButton(sender: AnyObject) {
+    }
+    
     
     
     

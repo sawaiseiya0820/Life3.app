@@ -36,15 +36,15 @@ class Hello10: UIViewController {
     }
     @IBAction func setButton5(sender: AnyObject) {
         
-        
-        var random51: Int
-        var random52: Int
-        var random53: Int
-        var random54: Int
-        var random55: Int
-        var random56: Int
-        var random57: Int
-        var random58: Int
+//        
+//        var random51: Int
+//        var random52: Int
+//        var random53: Int
+//        var random54: Int
+//        var random55: Int
+//        var random56: Int
+//        var random57: Int
+//        var random58: Int
         
         
         Array.shuffle(Array.count)
@@ -76,5 +76,7 @@ class Hello10: UIViewController {
         app58.text = Array2[7]
 
     
+    }
+    @IBAction func todo5(sender: AnyObject) {
     }
 }         

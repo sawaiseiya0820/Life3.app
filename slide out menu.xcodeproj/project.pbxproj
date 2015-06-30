@@ -12,6 +12,11 @@
 		B731A8A11B3BC19000457636 /* 121722.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B731A8A01B3BC19000457636 /* 121722.jpg */; };
 		B731A8A31B3BC47E00457636 /* human.png in Resources */ = {isa = PBXBuildFile; fileRef = B731A8A21B3BC47E00457636 /* human.png */; };
 		B731A8A51B3BC49B00457636 /* wpid-Kpieb1m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B731A8A41B3BC49B00457636 /* wpid-Kpieb1m.jpg */; };
+		B73AA32C1B3F043800ABB1B4 /* figure_talking.png in Resources */ = {isa = PBXBuildFile; fileRef = B73AA32B1B3F043800ABB1B4 /* figure_talking.png */; };
+		B73AA32E1B3F076E00ABB1B4 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B73AA32D1B3F076E00ABB1B4 /* images.jpg */; };
+		B73AA3301B3F0DEB00ABB1B4 /* nextinnovation_20120904.png in Resources */ = {isa = PBXBuildFile; fileRef = B73AA32F1B3F0DEB00ABB1B4 /* nextinnovation_20120904.png */; };
+		B73AA3321B3FBBFF00ABB1B4 /* Hello14.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73AA3311B3FBBFF00ABB1B4 /* Hello14.swift */; };
+		B73AA3341B3FBF9400ABB1B4 /* Hello15.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73AA3331B3FBF9400ABB1B4 /* Hello15.swift */; };
 		B73C9DFA1B3BF3D2004231A9 /* Hello13.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73C9DF91B3BF3D2004231A9 /* Hello13.swift */; };
 		B748C7471B3AFBC300C62729 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748C7461B3AFBC300C62729 /* MasterTableViewController.swift */; };
 		B748C7491B3AFBE800C62729 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748C7481B3AFBE800C62729 /* addViewController.swift */; };
@@ -56,6 +61,11 @@
 		B731A8A01B3BC19000457636 /* 121722.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 121722.jpg; sourceTree = "<group>"; };
 		B731A8A21B3BC47E00457636 /* human.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = human.png; sourceTree = "<group>"; };
 		B731A8A41B3BC49B00457636 /* wpid-Kpieb1m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wpid-Kpieb1m.jpg"; sourceTree = "<group>"; };
+		B73AA32B1B3F043800ABB1B4 /* figure_talking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figure_talking.png; sourceTree = "<group>"; };
+		B73AA32D1B3F076E00ABB1B4 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		B73AA32F1B3F0DEB00ABB1B4 /* nextinnovation_20120904.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextinnovation_20120904.png; sourceTree = "<group>"; };
+		B73AA3311B3FBBFF00ABB1B4 /* Hello14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello14.swift; sourceTree = "<group>"; };
+		B73AA3331B3FBF9400ABB1B4 /* Hello15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello15.swift; sourceTree = "<group>"; };
 		B73C9DF91B3BF3D2004231A9 /* Hello13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello13.swift; sourceTree = "<group>"; };
 		B748C7461B3AFBC300C62729 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		B748C7481B3AFBE800C62729 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +141,9 @@
 		DBE178DD1B10EAC500A50805 /* slide out menu */ = {
 			isa = PBXGroup;
 			children = (
+				B73AA32F1B3F0DEB00ABB1B4 /* nextinnovation_20120904.png */,
+				B73AA32D1B3F076E00ABB1B4 /* images.jpg */,
+				B73AA32B1B3F043800ABB1B4 /* figure_talking.png */,
 				DBE178E01B10EAC500A50805 /* AppDelegate.swift */,
 				B76E8BE01B3559DA00D77AE0 /* ExtensionArray.swift */,
 				DBE178E21B10EAC500A50805 /* ViewController.swift */,
@@ -152,6 +165,8 @@
 				B70045281B38196200146FD0 /* Hello11.swift */,
 				B7C14FEB1B383CEF00124665 /* Hello12.swift */,
 				B73C9DF91B3BF3D2004231A9 /* Hello13.swift */,
+				B73AA3311B3FBBFF00ABB1B4 /* Hello14.swift */,
+				B73AA3331B3FBF9400ABB1B4 /* Hello15.swift */,
 				DBE1790A1B1181D700A50805 /* world.swift */,
 				DBE179081B11819E00A50805 /* Second.swift */,
 				B731A8A01B3BC19000457636 /* 121722.jpg */,
@@ -271,13 +286,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73AA32C1B3F043800ABB1B4 /* figure_talking.png in Resources */,
 				B731A8A11B3BC19000457636 /* 121722.jpg in Resources */,
 				B731A8A31B3BC47E00457636 /* human.png in Resources */,
 				B731A8A51B3BC49B00457636 /* wpid-Kpieb1m.jpg in Resources */,
 				DBE178E61B10EAC500A50805 /* Main.storyboard in Resources */,
+				B73AA32E1B3F076E00ABB1B4 /* images.jpg in Resources */,
 				DBE178EB1B10EAC500A50805 /* LaunchScreen.xib in Resources */,
 				B7ECE7301B33065600483B65 /* Long-party-table-with-neon-napkins.jpg in Resources */,
 				DBE178E81B10EAC500A50805 /* Images.xcassets in Resources */,
+				B73AA3301B3F0DEB00ABB1B4 /* nextinnovation_20120904.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +322,12 @@
 				B74E7B251B35F3D0003A5EC8 /* Hello9.swift in Sources */,
 				B748C7491B3AFBE800C62729 /* addViewController.swift in Sources */,
 				B76E8BE31B35C21F00D77AE0 /* Hello8.swift in Sources */,
+				B73AA3321B3FBBFF00ABB1B4 /* Hello14.swift in Sources */,
 				DBE178E11B10EAC500A50805 /* AppDelegate.swift in Sources */,
 				B76E8BE11B3559DA00D77AE0 /* ExtensionArray.swift in Sources */,
 				B748C74B1B3AFC0500C62729 /* DetailViewController.swift in Sources */,
 				DBE179051B10EE3A00A50805 /* BackTableVC.swift in Sources */,
+				B73AA3341B3FBF9400ABB1B4 /* Hello15.swift in Sources */,
 				B76E8BDF1B3551A000D77AE0 /* Hello7.swift in Sources */,
 				B73C9DFA1B3BF3D2004231A9 /* Hello13.swift in Sources */,
 				DBE179071B11813500A50805 /* Hello.swift in Sources */,
