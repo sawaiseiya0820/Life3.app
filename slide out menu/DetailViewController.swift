@@ -1,7 +1,7 @@
 //
 //  DetailViewController.swift
 //  slide out menu
-//
+//w
 //  Created by 澤井聖也 on 2015/06/24.
 
 import UIKit
