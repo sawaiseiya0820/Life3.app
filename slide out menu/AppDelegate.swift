@@ -3,6 +3,8 @@
 //  slide out menu
 //
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
-
+//        Parse.enableLocalDatastore()
         
+
+        Parse.setApplicationId("BXqjyw2OlHNWoGGb3DAXI87i0RRa8ITLawTQoOr4", clientKey: "jHDYm7ntxdMZRJqx96hU5k5D9CXNkMB8SvunnU8z")
+        
+                var testObject:PFObject = PFObject(className: "TestObject")
+                testObject["foo"] = "bar"
+                testObject.setObject("user1", forKey: "user")
+        
+        
+        testObject.saveInBackground()
         
         return true
     }
