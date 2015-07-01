@@ -9,6 +9,7 @@
 import UIKit
 
 class AddNoteTableViewController: UITableViewController {
+    
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var textView: UITextView!
 
@@ -18,7 +19,6 @@ class AddNoteTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         if(self.object != nil){
             
             self.titleField?.text = self.object["title"] as! String
@@ -44,11 +44,11 @@ class AddNoteTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
+
     }
     
     
-    @IBAction func saveAction(sender: AnyObject) {
+    @IBAction func saveAction(sender: UIBarButtonItem) {
    
     self.object["username"] = PFUser.currentUser()?.username
     self.object["title"] = self.titleField?.text
@@ -58,37 +58,28 @@ class AddNoteTableViewController: UITableViewController {
         
             if(error == nil) {
                 
-                println(error!.userInfo)
                 
                 
             }else{
-                
-                
-                self.navigationController?.popToRootViewControllerAnimated(true)
-                
+                 println(error!.userInfo)
+
             }
             
             
         }
         
+            self.navigationController?.popToRootViewControllerAnimated(true)
+                
+            
+            
+            
+        
+        
     
     }
     
 //
-//    // MARK: - Table view data source
-//
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Potentially incomplete method implementation.
-//        // Return the number of sections.
-//        return 0
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete method implementation.
-//        // Return the number of rows in the section.
-//        return 0
-//    }
-
+//    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell

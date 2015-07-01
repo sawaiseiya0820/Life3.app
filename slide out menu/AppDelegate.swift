@@ -18,17 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
-//        Parse.enableLocalDatastore()
+        Parse.enableLocalDatastore()
+      ParseCrashReporting.enable()
+        Parse.setApplicationId("SIUZizw0Sukihj2e0R1n5V3uupwLLqy9YllCb2Zk", clientKey: "Xez4im5zSyujsLR0xsPFrzN2yu4fwm8tkUUrrlI8")
         
-
-        Parse.setApplicationId("BXqjyw2OlHNWoGGb3DAXI87i0RRa8ITLawTQoOr4", clientKey: "jHDYm7ntxdMZRJqx96hU5k5D9CXNkMB8SvunnU8z")
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
-                var testObject:PFObject = PFObject(className: "TestObject")
-                testObject["foo"] = "bar"
-                testObject.setObject("user1", forKey: "user")
-        
-        
-        testObject.saveInBackground()
         
         return true
     }

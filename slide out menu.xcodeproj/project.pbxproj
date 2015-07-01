@@ -47,6 +47,7 @@
 		B77CA25F1B32D30D0066F219 /* Hello3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77CA25E1B32D30D0066F219 /* Hello3.swift */; };
 		B7AA0C8A1B35298F00FC48ED /* Hello4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AA0C891B35298F00FC48ED /* Hello4.swift */; };
 		B7C14FEC1B383CEF00124665 /* Hello12.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C14FEB1B383CEF00124665 /* Hello12.swift */; };
+		B7D3A5D41B4451EF002A2B4E /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3A5D31B4451EF002A2B4E /* libstdc++.6.dylib */; };
 		B7ECE7301B33065600483B65 /* Long-party-table-with-neon-napkins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7ECE72F1B33065600483B65 /* Long-party-table-with-neon-napkins.jpg */; };
 		B7F6B1DE1B4303820080823D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6B1DD1B4303820080823D /* File.swift */; };
 		B7F6B1E01B4307550080823D /* Master1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F6B1DF1B4307550080823D /* Master1TableViewController.swift */; };
@@ -118,6 +119,7 @@
 		B77CA25E1B32D30D0066F219 /* Hello3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello3.swift; sourceTree = "<group>"; };
 		B7AA0C891B35298F00FC48ED /* Hello4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello4.swift; sourceTree = "<group>"; };
 		B7C14FEB1B383CEF00124665 /* Hello12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello12.swift; sourceTree = "<group>"; };
+		B7D3A5D31B4451EF002A2B4E /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		B7ECE72F1B33065600483B65 /* Long-party-table-with-neon-napkins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Long-party-table-with-neon-napkins.jpg"; sourceTree = "<group>"; };
 		B7F6B1DD1B4303820080823D /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../File.swift; sourceTree = "<group>"; };
 		B7F6B1DF1B4307550080823D /* Master1TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Master1TableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D3A5D41B4451EF002A2B4E /* libstdc++.6.dylib in Frameworks */,
 				B7F6B1E81B4311000080823D /* Social.framework in Frameworks */,
 				B7F6B1E61B4310ED0080823D /* Accounts.framework in Frameworks */,
 				B769AAD51B42F7F200CAEC17 /* libsqlite3.dylib in Frameworks */,
@@ -184,6 +187,7 @@
 		B769AAD61B42F82E00CAEC17 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7D3A5D31B4451EF002A2B4E /* libstdc++.6.dylib */,
 				B769AAD41B42F7F200CAEC17 /* libsqlite3.dylib */,
 				B769AAD21B42F7B600CAEC17 /* libz.dylib */,
 				B7F6B1E71B4311000080823D /* Social.framework */,
@@ -240,6 +244,7 @@
 				DBE178E41B10EAC500A50805 /* Main.storyboard */,
 				B7F6B1DF1B4307550080823D /* Master1TableViewController.swift */,
 				B7F6B1E91B4313A80080823D /* Briding-Headr.h */,
+				DBE179001B10EBC700A50805 /* slide out menu-Bridging-Header.h */,
 				B7F6B1E11B43077D0080823D /* Master1TableViewCell.swift */,
 				B7F6B1E31B4307D50080823D /* AddNoteTableViewController.swift */,
 				B748C7481B3AFBE800C62729 /* addViewController.swift */,
@@ -277,7 +282,6 @@
 			children = (
 				DBE179011B10EBC700A50805 /* SWRevealViewController.h */,
 				DBE179021B10EBC700A50805 /* SWRevealViewController.m */,
-				DBE179001B10EBC700A50805 /* slide out menu-Bridging-Header.h */,
 				DBE178DF1B10EAC500A50805 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -310,6 +314,7 @@
 				DBE178D71B10EAC500A50805 /* Sources */,
 				DBE178D81B10EAC500A50805 /* Frameworks */,
 				DBE178D91B10EAC500A50805 /* Resources */,
+				B7D3A5D51B445242002A2B4E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -401,6 +406,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7D3A5D51B445242002A2B4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBE178D71B10EAC500A50805 /* Sources */ = {
