@@ -46,9 +46,9 @@ class Master1TableViewController: UITableViewController ,PFLogInViewControllerDe
             self.presentViewController(logInViewController, animated: true, completion: nil)
             
         }else {
-            
-            self.fetchAllObjectsFromLocalDatastore()
             self.fetchAllObjects()
+            self.fetchAllObjectsFromLocalDatastore()
+            
             
         }
         
@@ -81,6 +81,7 @@ class Master1TableViewController: UITableViewController ,PFLogInViewControllerDe
         }
         
     }
+    
     
     func fetchAllObjects() {
         
@@ -115,7 +116,7 @@ class Master1TableViewController: UITableViewController ,PFLogInViewControllerDe
     
     // MARK: - Parse Login
     
-    func logInViewController(logInController: PFLogInViewController!, shouldBeginLogInWithUsername username: String!, password: String!) -> Bool {
+    func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
         
         if (!username.isEmpty || !password.isEmpty) {
             return true
@@ -125,32 +126,32 @@ class Master1TableViewController: UITableViewController ,PFLogInViewControllerDe
         
     }
     
-    func logInViewController(logInController: PFLogInViewController!, didLogInUser user: PFUser!) {
+    func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func logInViewController(logInController: PFLogInViewController!, didFailToLogInWithError error: NSError!) {
+    func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
         println("Failed to log in...")
     }
     
-    func signUpViewController(signUpController: PFSignUpViewController!, shouldBeginSignUp info: [NSObject : AnyObject]!) -> Bool {
+    func signUpViewController(signUpController: PFSignUpViewController, shouldBeginSignUp info: [NSObject : AnyObject]) -> Bool {
         
-        if let password = info?["password"] as? String {
+        if let password = info["password"] as? String {
             return count(password.utf16) >= 8
         }
         return false
         
     }
     
-    func signUpViewController(signUpController: PFSignUpViewController!, didSignUpUser user: PFUser!) {
+    func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func signUpViewController(signUpController: PFSignUpViewController!, didFailToSignUpWithError error: NSError!) {
+    func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
         println("Failed to sign up...")
     }
     
-    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController!) {
+    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
         println("User dismissed sign up.")
     }
     
@@ -169,7 +170,7 @@ class Master1TableViewController: UITableViewController ,PFLogInViewControllerDe
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Master1TableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Master1TableViewCell
         
         
         var object: PFObject = self.noteObjects.objectAtIndex(indexPath.row) as! PFObject
